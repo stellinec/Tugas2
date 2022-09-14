@@ -55,7 +55,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'project_django.urls'
+ROOT_URLCONF = 'tugas2pbpsc.urls'
 
 TEMPLATES = [
     {
@@ -73,11 +73,11 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'project_django.wsgi.application'
+WSGI_APPLICATION = 'tugas2pbpsc.wsgi.application'
 
 
 # Database
-# https://docs.djangoproject.com/en/4.1/ref/settings/#databases
+# https://docs.djangotugas2pbpsc.com/en/4.1/ref/settings/#databases
 
 DATABASES = {
     'default': {
