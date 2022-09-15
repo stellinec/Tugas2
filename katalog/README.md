@@ -1,35 +1,35 @@
-Membuat sebuah README.md yang berisi link menuju aplikasi Heroku yang sudah kamu deploy serta jawaban dari beberapa pertanyaan berikut:
+link menuju aplikasi Heroku : [https://tugas2pbpsc.herokuapp.com/]
 
-- Buatlah bagan yang berisi request client ke web aplikasi berbasis Django beserta responnya dan jelaskan pada bagan tersebut kaitan antara urls.py, views.py, models.py, dan berkas html;
+# Bagan beserta penjelasannya
+
+Berikut adalah link yang berisi image bagan:
+[https://drive.google.com/file/d/1J7Pimkmsd0oXqKYZIf1xFP896GdhWmrs/view?usp=sharing]
+
+Penjelasan:
+Awalnya, request client akan masuk ke web aplikasi berbasis Django dan diproses melalui urls.py dan diteruskan ke views.py, kemudian views.py akan memanggil query ke models.py dan models.py akan mengembalikan database kepada views.py. Database tersebut akan diproses dan hasilnya dipetakan ke dalam berkas HTML, kemudian Django akan mengembalikan respon kepada user dengan template sebagai responnya. Dalam proses ini, urls.py berfungsi untuk mengatur segala macam routing,  models.py berperan sebagai pengelola data dan direpresentasikan oleh database, views.py berperan penerima permintaan dan mengirimkan tanggapan, dan berkas html berperan sebagai tampilan yang akan dikembalikan kepada pengguna.
 
 
-- Jelaskan kenapa menggunakan virtual environment? Apakah kita tetap dapat membuat aplikasi web berbasis Django tanpa menggunakan virtual environment?
 
-Kita menggunakan virtual environment dikarenakan setiap program ataupun aplikasi yang kita kerjakan memiliki modul atau library dengan versi yang spesifik nya sendiri agar dapat dijalankan dengan baik. Contohnya kita mengerjakan suatu proyek dengan menggunakan django versi 1.1, aplikasi berjalan dengan baik pada modul versi 1.1. Selang beberapa waktu kemudian, django merilis versi baru dan kita mengupgradenya ke versi baru tersebut. Tetapi, ternyata proyek yang sudah kita kerjakan tadi tidak dapat berjalan dengan baik pada modul versi terbaru ini, dikarenakan adanya perubahan-perubahan fungsi. Oleh karena itu, kita memnggunakan virtual environment agar masing-masing aplikasi atau program memiliki modulnya masing-masing. Akan tetapi, kita tetap dapat membuat aplikasi web berbasis Django tanpa menggunakan virtual environment.
+# Menapa menggunakan virtual environment?
 
-- Jelaskan bagaimana cara kamu mengimplementasikan poin 1 sampai dengan 4 di atas.
-Pertama-tama, di dalam view.py, saya membuat fungsi show_katalog yang menerima parameter request dan mengembalikan render(request, "katalog.html", context). 
+Kita menggunakan virtual environment dikarenakan setiap program ataupun aplikasi yang kita kerjakan memiliki modul atau library dengan versi yang spesifik nya sendiri agar dapat dijalankan dengan baik. Contohnya kita mengerjakan suatu proyek dengan menggunakan django versi 1.1, aplikasi berjalan dengan baik pada modul versi 1.1. Selang beberapa waktu kemudian, django merilis versi baru dan kita mengupgradenya ke versi baru tersebut. Tetapi, ternyata proyek yang sudah kita kerjakan tadi tidak dapat berjalan dengan baik pada modul versi terbaru ini, dikarenakan adanya perubahan-perubahan fungsi. Oleh karena itu, kita memnggunakan virtual environment agar masing-masing aplikasi atau program memiliki modulnya masing-masing. Kita tetap dapat membuat aplikasi web berbasis Django tanpa menggunakan virtual environment, akan tetapi lebih baik menggunakan virtual environment untuk menghindari kekacauan *interdependency*.
 
-data_barang_katalog = CatalogItem.objects.all()
-context = {
-    'list_barang': data_barang_katalog,
-    'nama' : 'Stelline Claudia',
-    'id' : '2106700933'
-}
 
-kemudian saya juga menanbahkan code diatas yang berfungsi untuk memanggil fungsi query ke model database dan menyimpan hasil query tersebut ke dalam variabel context.
 
-Setelah itu, saya membuat sebuah routing untuk memetakan fungsi yang telah saya buat pada views.py, yaitu dengan menanbahkkan code berikut pada katalog.html
+# mengimplementasikan poin 1 sampai dengan 4
 
-{% for barang in list_barang %}
-    <tr>
-      <th>{{barang.item_name}}</th>
-      <th>{{barang.item_price}}</th>
-      <th>{{barang.item_stock}}</th>
-      <th>{{barang.rating}}</th>
-      <th>{{barang.description}}</th>
-      <th>{{barang.item_url}}</th>
-    </tr>
-{% endfor %} 
+1. Pada folder katalog, membuat fungsi show_katalog yang menerima parameter request dan mengembalikan render(request, "katalog.html") di dalam file views.py
+2. Membuat sebuah routing untuk memetakan fungsi yang telah dibuat pada views.py dengan menambahkan code pada file urls.py
+4. Mengimport models ke dalam file views.py untuk melakukan pengambilan data dari database
+5. Menambah potongan kode yang berfungsi untuk memanggil fungsi query ke model database dan menyimpan hasil query tersebut ke dalam sebuah variabel.
+6. Menambahkan variabel "context" sebagai parameter ketiga pada pengembalian fungsi render di fungsi yang sudah kamu buat pada poin 1, agar data yang ada pada variabel "context" dapat ikut di-render oleh Django sehingga nantinya dapat memunculkan data tersebut pada halaman HTML.
+7. Melakukan mapping terhadap data yang telah ikut di-render pada fungsi views untuk dapat memunculkannya di halaman HTML denagn engubah bagian "Fill me!" yang ada pada katalog.html menjadi nama dan id serta melakukan iterasi terhadap variabel list_barang untuk menampilkan isinya di dalam tabel
+8. Membuat app heroku yang baru bernama "tugas2pbpsc" dan juga mengubah nama folder yang awalnya project_django menjadi tugas2pbpsc, begitu pula dengan variabel-variabel yang ada di foldernya.
+9. Mengubah code yang ada di urls.py di folder tugas2pbpsc menjadi:
 
-Saya juga mengubah Fill me menjadi {{nama}} dan{{id}} untuk menampilkan nama dan id yang telah saya tulis pada variabel context diatas
+urlpatterns = [
+    path('', include('katalog.urls')),
+]
+
+10. Melakukan add, commit, dan push perubahan yang sudah dilakukan untuk menyimpannya ke dalam repositori GitHub.
+11. Melakukan Deploy Aplikasi Django yang sudah dibuatke Heroku
