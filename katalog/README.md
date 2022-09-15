@@ -16,7 +16,7 @@ Kita menggunakan virtual environment dikarenakan setiap program ataupun aplikasi
 
 
 
-# mengimplementasikan poin 1 sampai dengan 4
+# Mengimplementasikan poin 1 sampai dengan 4
 
 1. Pada folder katalog, membuat fungsi show_katalog yang menerima parameter request dan mengembalikan render(request, "katalog.html") di dalam file views.py
 2. Membuat sebuah routing untuk memetakan fungsi yang telah dibuat pada views.py dengan menambahkan code pada file urls.py
