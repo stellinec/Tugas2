@@ -1,0 +1,129 @@
+[
+    {
+        "model": "mywatchlist.mywatchedlist",
+        "pk": 1,
+        "fields": {
+            "watched": "Watched",
+            "title": "Fractured",
+            "rating": "6.4/10",
+            "release_date": "September 22, 2019",
+            "review": "If you're looking for a mind boggling movie that keeps you second-guessing until the end, then look no further than Fractured."
+    
+        }
+    },
+    {
+        "model": "mywatchlist.mywatchedlist",
+        "pk": 2,
+        "fields": {
+            "watched": "Watched",
+            "title": "The Call",
+            "rating": "7,1/10",
+            "release_date": "November 7, 2020",
+            "review": "A movie that messes with your head, keeps you at the edge of your seat, and then blow your mind at the end."
+        }
+    },
+    {
+        "model": "mywatchlist.mywatchedlist",
+        "pk": 3,
+        "fields": {
+            "watched": "Watched",
+            "title": "Forgotten",
+            "rating": "7,4/10",
+            "release_date": "November 29, 2017",
+            "review": "Very suspenseful atmosphere throughout with fantastic sound effects to enhance this. There were also some great jump scares as well. The actors portrayed their roles soo well and were so natural. The ending was unexpected, which was interesting."
+        }
+    },
+ 
+
+    {
+        "model": "mywatchlist.mywatchedlist",
+        "pk": 4,
+        "fields": {
+            "watched": "Watched",
+            "title": "Love and Leashes",
+            "rating": "6,3/10",
+            "release_date": "February 11, 2022",
+            "review": "It was portrayed well, the concept was done lightly but on point. It approached the concept of BDSM with innocence and dignity while incorporating slight provocative. The actors all played their role well and impressively."
+        }
+    },
+    {
+        "model": "mywatchlist.mywatchedlist",
+        "pk": 5,
+        "fields": {
+            "watched": "Watched",
+            "title": "Wish Dragon",
+            "rating": "7,2/10",
+            "release_date": "June 11, 2021",
+            "review": "Charming characters, nostalgic but distinct storyline, universal lessons with a hint of reality, and a touch of cartoon magic will really just equate to a great movie."
+        }
+    },
+    {
+        "model": "mywatchlist.mywatchedlist",
+        "pk": 6,
+        "fields": {
+            "watched": "Watched",
+            "title": "Turning Red",
+            "rating": "7/10",
+            "release_date": "March 11, 2022",
+            "review": "This film was so powerful in artfully (as well as humorously) talking about mother-daughter intergenerational relationships and the burdens many of us unknowingly carry and try to break from throughout our lives."
+        }
+    },
+    {
+        "model": "mywatchlist.mywatchedlist",
+        "pk": 7,
+        "fields": {
+            "watched": "Watched",
+            "title": "Midnight Runners",
+            "rating": "7,3/10",
+            "release_date": "August 9, 2017",
+            "review":"The plot line was amazing and beautiful. It has filled with action with the right amount of comedy. It also teaches a beautiful message about life and to always do what you think is right."
+        }
+    },
+ 
+    {
+        "model": "mywatchlist.mywatchedlist",
+        "pk": 8,
+        "fields": {
+            "watched": "Watched",
+            "title": "Red Notice",
+            "rating": "6,3/10",
+            "release_date": "November 4, 2021",
+            "review": "Red Notice is a fun movie. Not too excited not too boring it lies somewhere in between. You can say it is a commercial blockbuster."
+        }
+    },
+    {
+        "model": "mywatchlist.mywatchedlist",
+        "pk": 9,
+        "fields": {
+            "watched": "Watched",
+            "title": "The Adam Project",
+            "rating": "6,7/10",
+            "release_date": "February 28, 2022",
+            "review": "This film achieves an incredibly rare thing- it combines a heartfelt human drama with profound lessons for life within a sci-fi time travel plot that engages heart, mind and soul. The plot itself is totally believable in a beautifully crafted film."
+        }
+    },
+    {
+        "model": "mywatchlist.mywatchedlist",
+        "pk": 10,
+        "fields": {
+            "watched": "Waiting",
+            "title": "Seoul Vibe",
+            "rating": "5,5/10",
+            "release_date": "August 26, 2021",
+            "review": "It's a hilarious comedy filled with action! It gives me some nostalgia considering it was set in 1988."
+        }
+    },
+
+   
+    {
+        "model": "mywatchlist.mywatchedlist",
+        "pk": 11,
+        "fields": {
+            "watched": "Waiting",
+            "title": "Allenoid",
+            "rating": "6,4/10",
+            "release_date": "July 20, 2022",
+            "review": "Time travel, fiction, past, present, future, madness. The idea is so fresh. Actors are all awesome. The movies which are crazy and fascinating, which push us to imagine the impossible."
+        }
+    }
+]
