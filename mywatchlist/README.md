@@ -7,9 +7,9 @@
 ![link menuju aplikasi Heroku dalam xml]
 (https://tugas2pbpsc.herokuapp.com/mywatchlist/xml/)
 
-![screenshot html](assets\html.jpeg)
-![screenshot html](assets\json.jpeg)
-![screenshot html](assets\xml.jpeg)
+![screenshot html](https://github.com/stellinec/Tugas2/blob/main/assets/html.jpeg)
+![screenshot json](https://github.com/stellinec/Tugas2/blob/main/assets/json.jpeg)
+![screenshot xml](https://github.com/stellinec/Tugas2/blob/main/assets/xml.jpeg)
 
 # Perbedaan antara JSON, XML, dan HTML
 
