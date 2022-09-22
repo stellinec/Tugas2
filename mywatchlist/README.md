@@ -41,7 +41,7 @@ Berikut adalah perbedaan-perbedaannya :
     - Tidak menggunakan *end tag*
 
 # Mengapa data delivery diperlukan dalam pengimplementasian sebuah platform
-Dikarenakan dalam pengembangan suatu platform, ada kalanya diperlukan pengiriman data dari suatu stack ke stack lainnya, sehingga diperlukan adanya data delivery. Data yang dikirimkan bisa bermacam-macam bentuknya, beberapa contoh format data yang umum digunakan antara lain HTML, XML, dan JSON. 
+Dikarenakan dalam pengembangan suatu platform, ada kalanya diperlukan pengiriman data dari suatu stack ke stack lainnya dan data-data tersebut bisa bermacam-macam bentuknya sehingga diperlukan adanya data delivery. Beberapa contoh format data yang umum digunakan antara lain HTML, XML, dan JSON. Data delivery disini berguna untuk menyesuaikan format data yang akan dikirimkan dengan yang di-*request*, contohnya jika browser me-*request* halaman dengan format data HTML, maka data yang dikirimkan akan berformat HTML.
 
 
 
@@ -60,4 +60,4 @@ Dikarenakan dalam pengembangan suatu platform, ada kalanya diperlukan pengiriman
 11. Membuat dan menambahkan variabel "context" sebagai parameter ketiga pada pengembalian fungsi render di fungsi yang sudah dibuat buat pada poin 7, agar data yang ada pada variabel "context" dapat ikut di-render oleh Django sehingga nantinya dapat memunculkan data tersebut pada halaman HTML.
 12. Membuat berkas urls.py pada folder mywatchlist dan mengimpor fungsi yang telah dibuat pada poin ke 8 dan 9, serta menambahkan path url ke dalam urlpatterns untuk mengakses fungsi yang sudah diimpor tadi.
 13. Melakukan add, commit, dan push perubahan yang sudah dilakukan untuk menyimpannya ke dalam repositori GitHub.
-14. Melakukan Deploy Aplikasi Django yang sudah dibuat ke Heroku
+14. Melakukan Deploy Aplikasi Django yang sudah dibuat ke Heroku.
