@@ -1,19 +1,16 @@
-![link menuju aplikasi Heroku dalam html]
-(https://tugas2pbpsc.herokuapp.com/mywatchlist/html/) 
+[link menuju aplikasi Heroku dalam html](https://tugas2pbpsc.herokuapp.com/mywatchlist/html/) 
 
-![link menuju aplikasi Heroku dalam json]
-(https://tugas2pbpsc.herokuapp.com/mywatchlist/json/ )
+[link menuju aplikasi Heroku dalam json](https://tugas2pbpsc.herokuapp.com/mywatchlist/json/ )
 
-![link menuju aplikasi Heroku dalam xml]
-(https://tugas2pbpsc.herokuapp.com/mywatchlist/xml/)
+[link menuju aplikasi Heroku dalam xml](https://tugas2pbpsc.herokuapp.com/mywatchlist/xml/)
 
-###### Screenshot HTML
+## Screenshot HTML
 ![screenshot html](https://github.com/stellinec/Tugas2/blob/main/assets/html.jpeg)
 
-###### Screenshot JSON
+## Screenshot JSON
 ![screenshot json](https://github.com/stellinec/Tugas2/blob/main/assets/json.jpeg)
 
-###### Screenshot XML
+## Screenshot XML
 ![screenshot xml](https://github.com/stellinec/Tugas2/blob/main/assets/xml.jpeg)
 
 # Perbedaan antara JSON, XML, dan HTML
