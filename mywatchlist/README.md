@@ -1,10 +1,10 @@
-[link menuju aplikasi Heroku dalam html]
+![link menuju aplikasi Heroku dalam html]
 (https://tugas2pbpsc.herokuapp.com/mywatchlist/html/) 
 
-[link menuju aplikasi Heroku dalam json]
+![link menuju aplikasi Heroku dalam json]
 (https://tugas2pbpsc.herokuapp.com/mywatchlist/json/ )
 
-[link menuju aplikasi Heroku dalam xml]
+![link menuju aplikasi Heroku dalam xml]
 (https://tugas2pbpsc.herokuapp.com/mywatchlist/xml/)
 
 ![screenshot html](assets\html.jpeg)
