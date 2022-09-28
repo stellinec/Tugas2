@@ -65,7 +65,7 @@ def create_task(request):
         if form.is_valid():
             title = form.cleaned_data['title']
             description = form.cleaned_data['description']
-            form2 = Task.objects.create(title = title, description = description,user = request.user,date =datetime.datetime.now())
+            form2 = Task(title = title, description = description,user = request.user,date =datetime.datetime.now())
             form2.save()
             return HttpResponseRedirect(reverse("todolist:show_todolist"))
 
