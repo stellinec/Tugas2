@@ -13,8 +13,8 @@ akan membandingkan dua token yang ditemukan di sesi pengguna dan dalam permintaa
 dengan nilai dalam sesi pengguna, permintaan akan ditolak, sesi pengguna dihentikan dan peristiwa 
 dicatat sebagai potensi serangan CSRF.
 
-# Apakah kita dapat membuat elemen "<form>" secara manual?
-Kita dapat membuat elemen "<form>" secara manual, yaitu dengan menggunakan {{form.name_of_field}}, dengan
+# Apakah kita dapat membuat elemen "<"form">" secara manual?
+Kita dapat membuat elemen "<"form">" secara manual, yaitu dengan menggunakan {{form.name_of_field}}, dengan
 begitu form akan dirender secara manual.
 # Proses alur data 
 Pertama-tama, alur akan dimulai dengan *user* yang mengetik alamat di *browser*, kemudian
