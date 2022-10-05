@@ -47,3 +47,73 @@ fields yang didalamnya nanti dapat diambil oleh models.py.
 13. Membuat berkas urls.py pada folder todolist dan mengimpor fungsi yang telah dibuat pada views.py, serta menambahkan path url ke dalam urlpatterns untuk mengakses fungsi yang sudah diimpor tadi.
 14. Melakukan add, commit, dan push perubahan yang sudah dilakukan untuk menyimpannya ke dalam repositori GitHub.
 15. Melakukan deploy aplikasi Django yang sudah dibuat ke Heroku.
+
+# Perbedaan Inline, Internal, dan External CSS, serta kelebihan dan kekurangannya
+Pada inline style biasanya, properti CSS ditulis langsung pada file HTML dengan menggunakan atribut style yang diikuti dengan properti CSS, contohnya:
+< h1 style="color:red;margin-left:20px;"> Today’s Update < /h1 >
+
+Keuntungan:
+- Cepat diterapkan, mungkin salah satu cara tercepat untuk mengimplementasikan CSS Anda.
+- Lebih ringkas dan menggunakan memori paling sedikit.
+- Lebih mudah dalam melakukan pengujian terhadap tampilan halaman web yang diinginkan.
+
+Kerugian:
+- Rumit jika digunakan untuk membuat banyak halaman web, karena harus diketik ulang setiap kalinya
+- Lebih berantakan dan sulit dibaca.
+
+Pada internal style, properti CSS juga ditulis langsung pada file HTML, bedanya style internal menggunakan tag < style > untuk membungkus properti CSS, contohnya:
+< style >
+.h1{
+    color:red;
+    margin-left:20px;
+}
+
+Keuntungan:
+- Terlihat lebih rapi sehingga mudah dibaca karena masing-masing memiliki bagiannya tersendiri.
+- Lebih mudah dalam melakukan perubahan.
+- Lebih mudah dalam melakukan pengujian terhadap tampilan halaman web yang diinginkan.
+
+Kerugian:
+- Rumit jika digunakan untuk membuat banyak halaman web, karena harus diketik ulang pada setiap halamannya.
+
+Pada external style, properti CSS ditulis pada file CSS sendiri, kemudian diunggah pada server dan nantinya akan ditautkan dalam file HTML, contohnya:
+< link href="style.css" rel="stylesheet" type="text/css" >
+
+Keuntungan:
+- Menjadi lebih rapi karena file CSS terpisah dengan file HTML
+- Dapat mengubah seluruh rangkaian halaman dengan mengubah satu file CSS saja
+
+Kerugian:
+- Menggunakan lebih banyak memori dan ruang penyimpanan.
+- Tidak efektif untuk digunakan jika hanya untuk satu halaman web saja.
+- Lebih memakan waktu karena tidak dapat langsung melakukan pengujian terhadap tampilan yang diinginkan.
+
+
+# Tag HTML ynag diketahui serta penjelasannya
+- < b > mendefinisikan *bold text*
+- < body > mendefinisikan *body* dari dokumen
+- < button > mendefinisikan tombol yang bisa ditekan-tekan
+- < div > mendefinisikan *section* di dokumen
+- < em > mendefinisikan teks yang ditekankan
+- < form > mendefinisikan bentuk HTML untuk input dari pengguna
+- < h1 > hingga < h6 > mendefinisikan *heading* pada HTML
+- < header > mendefinisikan *header* atau *section* dari dokumen
+- < img > mendefinisikan *image*
+- < input > mendefinisikan *input*
+- < label > mendefinisikan *label* dari elemen < input >
+- < li > mendefinisikan *list* dari *item*
+- < link > mendefinisikan hubungan dari dokumen dengan *resource* dari luar
+- < p > mendefinisikan paragraph
+- < style > mendefinisikan informasi style 
+- < table > mendefinisikan tabel
+
+# Tipe-tipe CSS selector yang diketahui serta penjelasannya
+- :hover memilih tautan dengan mouse
+- :focus memilih elemen input yang memiliki fokus
+- :valid memilih semua elemen input yang memiliki nilai yang valid
+- :root memilih elemen *root* dokumen
+
+# Mengimplementasikan checklist tugas
+1. Mengubah seluruh isi dari login.html, register.html, todolist.html hingga create-teask.html, kemudian menuliskan yang baru dengan CSS framework bootstrap
+2. Menulis properti CSS dalam file HTML dengan internal style dan sedikit inline style
+3. Melihat tutorial cara membuat halaman login dari [link youtube ini](https://www.youtube.com/watch?v=PF1n6ZdTaW4), kemudian mengubah file html lain sesuai dengan style yang digunakan pada video tersebut.
