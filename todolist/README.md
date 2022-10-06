@@ -1,6 +1,6 @@
 [link menuju aplikasi Heroku](https://tugas2pbpsc.herokuapp.com/todolist) 
 
-
+# TUGAS 4
 # Kegunaan {% csrf_token %} pada elemen <form>
 CSRF merupakan singkatan dari Cross-site request forgery yang berarti pemalsuan permintaan lintas situs, 
 ini merupakan suatu bentuk serangan pada aplikasi web. Peretas menipu para pengguna melalui permintaan 
@@ -48,17 +48,19 @@ fields yang didalamnya nanti dapat diambil oleh models.py.
 14. Melakukan add, commit, dan push perubahan yang sudah dilakukan untuk menyimpannya ke dalam repositori GitHub.
 15. Melakukan deploy aplikasi Django yang sudah dibuat ke Heroku.
 
+
+# TUGAS 5
 # Perbedaan Inline, Internal, dan External CSS, serta kelebihan dan kekurangannya
 Pada inline style biasanya, properti CSS ditulis langsung pada file HTML dengan menggunakan atribut style yang diikuti dengan properti CSS, contohnya:
 < h1 style="color:red;margin-left:20px;"> Today’s Update < /h1 >
 
 Keuntungan:
-- Cepat diterapkan, mungkin salah satu cara tercepat untuk mengimplementasikan CSS Anda.
+- Lebih cepat dan mudah untuk digunakan.
 - Lebih ringkas dan menggunakan memori paling sedikit.
 - Lebih mudah dalam melakukan pengujian terhadap tampilan halaman web yang diinginkan.
 
 Kerugian:
-- Rumit jika digunakan untuk membuat banyak halaman web, karena harus diketik ulang setiap kalinya
+- Rumit jika digunakan untuk membuat banyak halaman web, karena harus diketik ulang setiap kalinya.
 - Lebih berantakan dan sulit dibaca.
 
 Pada internal style, properti CSS juga ditulis langsung pada file HTML, bedanya style internal menggunakan tag < style > untuk membungkus properti CSS, contohnya:
@@ -80,8 +82,8 @@ Pada external style, properti CSS ditulis pada file CSS sendiri, kemudian diungg
 < link href="style.css" rel="stylesheet" type="text/css" >
 
 Keuntungan:
-- Menjadi lebih rapi karena file CSS terpisah dengan file HTML
-- Dapat mengubah seluruh rangkaian halaman dengan mengubah satu file CSS saja
+- Menjadi lebih rapi karena file CSS terpisah dengan file HTML.
+- Dapat mengubah seluruh rangkaian halaman dengan mengubah satu file CSS saja.
 
 Kerugian:
 - Menggunakan lebih banyak memori dan ruang penyimpanan.
@@ -108,12 +110,12 @@ Kerugian:
 - < table > mendefinisikan tabel
 
 # Tipe-tipe CSS selector yang diketahui serta penjelasannya
-- :hover memilih tautan dengan mouse
-- :focus memilih elemen input yang memiliki fokus
-- :valid memilih semua elemen input yang memiliki nilai yang valid
-- :root memilih elemen *root* dokumen
-
+- *Element selector* menggunakan tag HTML sebagai selector untuk mengubah properti yang terdapat dalam tag tersebut. Contohnya : h1{   }
+- *ID selector* menggunakan ID pada tag sebagai selectornya. Contohnya #header{  }
+- *Class selector* menggunakan nama class sebagai selectornya. Contohnya .content_section{  }
 # Mengimplementasikan checklist tugas
 1. Mengubah seluruh isi dari login.html, register.html, todolist.html hingga create-teask.html, kemudian menuliskan yang baru dengan CSS framework bootstrap
-2. Menulis properti CSS dalam file HTML dengan internal style dan sedikit inline style
-3. Melihat tutorial cara membuat halaman login dari [link youtube ini](https://www.youtube.com/watch?v=PF1n6ZdTaW4), kemudian mengubah file html lain sesuai dengan style yang digunakan pada video tersebut.
+2. Menulis properti CSS dalam file HTML dengan internal style dan sedikit inline style.
+3. Menambahkan STATIC_URL = 'static' pada file settings.py dalam folder tugas2pbpsc
+
+Catatan : Melihat tutorial cara membuat halaman login dari [link youtube ini](https://www.youtube.com/watch?v=PF1n6ZdTaW4), kemudian mengubah file html lain sesuai dengan style yang digunakan pada video tersebut.

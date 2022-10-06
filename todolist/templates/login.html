@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE-edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>LOGIN</title>
+        <title>Login</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     </head>
     <body>
@@ -30,7 +30,7 @@
                     <a href="{% url 'todolist:register' %}">Buat Akun</a>
                 </div >
                     
-                <input class="btn login_btn button-custom" type="submit" value="Login" >
+                <input class="btn login_btn button-custom rounded-pill" type="submit" value="Login" >
               
                 
                 
@@ -46,34 +46,34 @@
 
 <style>@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
     body{
-      font-family: 'Poppins', sans-serif;
-      font-size: 16px;
-      background: 	rgb(116, 89, 89) ;
-      color: 		#c08e74;
+        font-family: 'Poppins', sans-serif;
+        font-size: 16px;
+        background: rgb(116, 89, 89) ;
+        color: 	#c08e74;
     }
     .login{
-      height: 100vh;
-      width: 100%;
+        height: 100vh;
+        width: 100%;
     }
     .login-form{
-      margin: auto;
-      width: 370px;
-      padding: 25px;
+        margin: auto;
+        width: 370px;
+        padding: 25px;
     }
     .form-control{
-      font-size: 13px;
-      min-height: 48px;
+        font-size: 13px;
+        min-height: 48px;
     }
     .login-form a{
-      color: #f1cfa5; 
+         color: #f1cfa5; 
     }
     .login-form a:hover{
-      color:#fcf7f1; 
+        color:#fcf7f1; 
     }
     
     .no-account-link{
-      font-size: 13px;
-      color:rgb(28, 25, 25); 
+        font-size: 13px;
+        color:rgb(28, 25, 25); 
     }
     .massage{
         font-size: 13px;
@@ -86,8 +86,9 @@
     }
     .button-custom:focus{
         background-color: #583e3e; 
+        box-shadow: 0 0 0 0.2rem #c08e74;; 
     }
     .form-control:focus{
-      box-shadow: 0 0 0 0.2rem #c08e74 ;
+        box-shadow: 0 0 0 0.2rem #c08e74 ;
     }
-    </style>
+</style>
