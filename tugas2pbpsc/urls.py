@@ -20,6 +20,8 @@ urlpatterns = [
     path('katalog/', include('katalog.urls')),
     path('mywatchlist/', include('mywatchlist.urls')),
     path('todolist/', include('todolist.urls')),
+    path('todolist/json/', include('todolist.urls')),
+    path('todolist/add/', include('todolist.urls')),
 ]
 
 # TODO: Implement Routings Here
