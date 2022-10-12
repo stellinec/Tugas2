@@ -119,3 +119,4 @@ Kerugian:
 3. Menambahkan STATIC_URL = 'static' pada file settings.py dalam folder tugas2pbpsc
 
 Catatan : Melihat tutorial cara membuat halaman login dari [link youtube ini](https://www.youtube.com/watch?v=PF1n6ZdTaW4), kemudian mengubah file html lain sesuai dengan style yang digunakan pada video tersebut.
+

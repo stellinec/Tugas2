@@ -3,6 +3,7 @@ from django.shortcuts import render
 from todolist.models import Task
 from todolist.forms import Form
 from django.shortcuts import redirect
+from django.http import HttpResponse
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib import messages
 from django.contrib.auth import authenticate, login
@@ -11,6 +12,8 @@ from django.contrib.auth.decorators import login_required
 import datetime
 from django.http import HttpResponseRedirect
 from django.urls import reverse
+from django.core import serializers
+from django.views.decorators.csrf import csrf_exempt
 # Create your views here.
 
 @login_required(login_url='/todolist/login/')
@@ -22,9 +25,26 @@ def show_todolist(request):
     'nama' : 'Stelline Claudia',
     'id' : '2106700933',
     'user' : request.user,
-    'last_login': request.COOKIES['last_login'],
 }
     return render(request, "todolist.html", context)
+def show_json(request):
+    data =Task.objects.filter(user=request.user)
+    return HttpResponse(serializers.serialize("json", data), content_type="application/json")   
+
+
+@login_required(login_url='/todolist/login/')
+@csrf_exempt
+def add_task(request):
+    if request.method == "POST":
+        title = request.POST.get("judul")
+        description = request.POST.get("deskripsi")
+        Task.objects.create(title = title, description = description,user = request.user,date =datetime.datetime.now())
+        return HttpResponse()
+    else:
+        return redirect("todolist:show_todolist")
+
+
+
 def register(request):
     form = UserCreationForm()
 
