@@ -24,3 +24,5 @@ Asynchronous programming diterapkan pada AJAX ketika AJAX membuat halaman web me
 7. Membuat sebuah tombol `Add Task` yang membuka modal dengan form untuk menambahkan task.
 8. Melakukan pengirimkan data task untuk diproses menggunakan AJAX POST.
 9. Melakukan pengambilan data task menggunakan AJAX GET.
+10. Melakukan add, commit, dan push perubahan yang sudah dilakukan untuk menyimpannya ke dalam repositori GitHub.
+11. Melakukan deploy aplikasi Django yang sudah dibuat ke Heroku.
