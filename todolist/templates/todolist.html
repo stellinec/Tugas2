@@ -76,7 +76,7 @@
         }
 
        
-        $.get("todolist/json/", function(data) {
+        $.get("json/", function(data) {
             for(var i = 0; i < data.length; i++){
                 var tr = document.createElement("tr");
                 var judul_td = document.createElement("td");
@@ -111,7 +111,7 @@
             var judul = $("#input_judul").val();
             var deskripsi = $("#input_deskripsi").val();
             validate();
-            $.post("todolist/add/",
+            $.post("add/",
             {
                 judul,
                 deskripsi,
